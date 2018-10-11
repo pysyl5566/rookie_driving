@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_ERR">
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+        </Console>
+        
+        <!--<File name="testLog" fileName="${sys:user.home}/log/Test.log" append="false">
+        	<PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+        </File>-->
+
+        <!-- <RollingFile name="RollingInfoFile" filename="${sys:user.home}/log/Serer.log"
+            filepattern="${sys:user.home}/log/%d{YYYY-MM-dd}-%i.log">
+            <Filters>            
+            	<ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+            <Policies>
+            	<TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+        
+        <RollingFile name="RollingErrorFile" filename="${sys:user.home}/log/ERROR.log"
+            filepattern="${sys:user.home}/log/%d{YYYY-MM-dd}-%i.log">
+            <Filters>            
+            	<ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            	<ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+            <Policies>
+            	<TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile> -->
+        
+    </Appenders>
+    
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console" />
+            <!-- <AppenderRef ref="RollingInfoFile" />
+            <AppenderRef ref="RollingErrorFile" /> -->
+        </Root>
+    </Loggers>
+</Configuration>
