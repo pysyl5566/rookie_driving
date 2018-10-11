@@ -1,0 +1,23 @@
+{
+  "name": "river-chief-api-doc",
+  "version": "1.0.0",
+  "description": "river-chief api documents",
+  "private": true,
+  "scripts": {
+    "deploy": "rdoc --publish <your repo url>",
+    "build": "rdoc -d home,manual --clean --build",
+    "start": "rdoc -d home,manual --clean"
+  },
+  "keywords": [
+    "project",
+    "rdoc",
+    "react-doc",
+    "react",
+    "river-chief"
+  ],
+  "dependencies": {
+    "rdoc": "1.10.x"
+  },
+  "author": "",
+  "license": "MIT"
+}
