@@ -14,5 +14,5 @@ redirect: introduce/index
 
 5. 开发周期
 
-6. 以上都是随便写写
+6. 以上都是随便写写 
 
